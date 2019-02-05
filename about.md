@@ -4,15 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Ce blog vise à discuter comment la visualisation de données peut aider à comprendre comment les algorithmes de machine learning fonctionnent. Le blog présent a été motivé par l'activité de veille technologique, en dernière année, à l'École Centrale de Lyon.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Le blog a été réalisé en [Jekyll](https://jekyllrb.com/). L'ensemble des codes sont disponibles sur [GitHub](https://github.com/guillaume-lesaine/blog-visualization_machine_learning).
