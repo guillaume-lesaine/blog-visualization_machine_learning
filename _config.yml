@@ -16,11 +16,10 @@
 title: Glass Box
 email:
 description: >- # this means to ignore newlines until "baseurl:"
- Le blog présent a été motivé par l'activité de veille technologique, en dernière année, à l'École Centrale de Lyon.
+
 baseurl: "/blog-visualization_machine_learning" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  guillaume-lesaine
 
 # Build settings
 markdown: kramdown

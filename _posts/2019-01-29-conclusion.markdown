@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_site
 title: "Conclusion"
 date: 2019-01-29 12:04:32 +0100
 ---
