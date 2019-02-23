@@ -2,6 +2,7 @@
 layout: post_site
 title: "1 - Visualiser un algorithme"
 date: 2019-02-03 12:04:32 +0100
+permalink: "/visualiser-un-algorithme"
 ---
 
 # Il est difficile de visualiser une algorithme (ou de visualiser tout court)

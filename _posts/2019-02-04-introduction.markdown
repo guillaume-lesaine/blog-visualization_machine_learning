@@ -2,6 +2,7 @@
 layout: post_site
 title: "Introduction"
 date: 2019-02-04 12:04:32 +0100
+permalink: "/introduction"
 ---
 ## Pourquoi ce blog ?
 

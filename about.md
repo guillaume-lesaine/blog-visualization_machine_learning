@@ -1,10 +1,10 @@
 ---
 layout: page
 title: À propos
-permalink: /a_propos/
+permalink: /a_propos
 ---
 
-Ce blog vise à discuter comment la visualisation de données peut aider à comprendre comment les algorithmes de machine learning fonctionnent. Le blog présent a été motivé par l'activité de veille technologique, en dernière année, à l'École Centrale de Lyon.
+Ce blog vise à discuter l'apport de la la visualisation à la compréhension des algorithmes d'apprentissage automatique fonctionnent. Le blog présent a été motivé par l'activité de veille technologique, en dernière année, à l'École Centrale de Lyon.
 
 Remerciements
 

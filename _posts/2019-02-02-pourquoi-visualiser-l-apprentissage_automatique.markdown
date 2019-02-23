@@ -2,6 +2,7 @@
 layout: post_site
 title: "2 - Pourquoi visualiser l'apprentissage automatique ?"
 date: 2019-02-02 12:04:32 +0100
+permalink: "/pourquoi-visualiser-l-apprentissage_automatique"
 ---
 Les algorithmes d'apprentissage automatique diffèrent fondamentalement des algorithmes conventionnels. Peter Norvig, directeur de la recherche chez Google[^1], justifie ainsi le besoin de mieux comprendre l'apprentissage automatique.
 

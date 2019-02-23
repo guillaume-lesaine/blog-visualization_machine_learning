@@ -2,19 +2,22 @@
 layout: post_site
 title: "3 - Expliquer l'apprentissage automatique"
 date: 2019-02-01 12:04:32 +0100
+permalink: "/expliquer-l-apprentissage-automatique"
 ---
 
 Nous nous plaçons donc dans le cadre d'algorithmes dont l'opacité est uniquement liée à sa manière d'opérer. Plusieurs questions vont donc se poser. En effet, expliquer le fonctionnement de l'algorithme va dépendre du public de destination et de la visée. Nous allons donc explorer les objets, modes et moment de visualisation d'un algorithme d'apprentissage automatique. Nous choisissons de focaliser l'étude sur les réseaux de neurones convolutionnels.
 
 
-<div>
-<img src="{{site.baseurl}}/assets/img/cnn.png" style="display: block; margin-left: auto; margin-right: auto; width:80%">
-<h5 style="text-align:center">Figure 1 : Schéma d'un réseau de neurones convolutionnels</h5>
-</div>
+
 
 ## Que représenter ?
 
-Nous pouvons distinguer quatre grands aspects visualisable d'un réseau de neurones :
+Nous pouvons distinguer quatre grands aspects visualisable d'un réseau de neurones[^1] :
+
+<div>
+<img src="{{site.baseurl}}/assets/img/cnn.png" style="display: block; margin-left: auto; margin-right: auto; width:90%">
+<h5 style="text-align:center">Figure 1 : Schéma d'un réseau de neurones convolutionnels avec figuration des aspects visualisables</h5>
+</div>
 
 * <b>Architecture du modèle</b> : L'architecture du modèle peut tout d'abord être représentée. Celle-ci permet de représenter comment les données se propagent dans le modèle. Cette représentation peut inclure la représentation des liens au matériel ainsi qu'aux sauvegardes et logs effectuées.
 
@@ -27,7 +30,7 @@ Poids et filtres de convolution
 
 ## Quand ?
 
-Dans le cadre d'un algorithme d'apprentissage automatique, se pose la question du moment de la représentation, pendant ou après l'entrainement. Ainsi, dans le cas d'un réseau de neurones :
+Dans le cadre d'un algorithme d'apprentissage automatique, se pose la question du moment de la représentation, pendant ou après l'entrainement. Ainsi, dans le cas d'un réseau de neurones[^1] :
 
 * <b>Pendant l'entraînement</b> : Visualiser un modèle pendant l'entrainement permet d'observer l'évolution de sa performance et potentiellement détecter des problèmes comme l'overfitting. Ces visualisations peuvent ainsi permettre de gagner du temps en arrêtant des entrainements qui ne mèneraient à rien.
 
@@ -59,22 +62,81 @@ L'outil <b>TensorBoard</b>, permet de représenter un réseau implémenter en Te
 
 # Scatter plots
 
-# Line charts
+Les données d'entrée d'un réseau de neurones sont très variables et sont généralement représentées par des objets à grande dimension. Ces grandes dimensions sont un réel défi pour la visualisation de données. En effet, comment comparer le traitement d'un modèle sur des entrées différentes en plaçant sur un même graphique les entrées et les résultats. Face à ce problème de dimension, un solution courante existe, <b>la projection</b>. Nous représentons dans le schéma suivant l'utilisation d'une projection pour comparer la bonne classification d'image de 32x32 = 1024 pixels.
+
+<div>
+<img src="{{site.baseurl}}/assets/img/reduction.png" style="display: block; margin-left: auto; margin-right: auto; width:75%">
+<h5 style="text-align:center">Figure 4 : Schématisation d'une réduction de dimension</h5>
+</div>
+
+Chaque image est représentée par un vecteur de 1024 pixels. Il serait possible d'effectuer 1024 représentation des pixels entre les images d'entrée. Cela ne permettrait pas de donner une idée de la qualité du modèle. Une projection des 1024 dimensions en 2D ou 3D est donc effectuée permettant de placer chaque image d'entrée dans un nuage de point (scatter plot). À noter que les axes après projection n'ont pas toujours une signification particulière. Les sorties correspondant à des classes sont elles encodée simplement par des couleurs.
+
+Le choix de projection est à la discretion de l'équipe développant le modèle. Néanmoins, certaines projections seront mieux adaptées en fonction de des distributions des données d'entrée.[^4] Ci-dessous quelques exemples de représentations après projection pour la prédiction de nombres écrits à la main provenant de la base MNIST.
+
+<div>
+<img src="{{site.baseurl}}/assets/img/t_sne.png" style="align:left; width:32%">
+<img src="{{site.baseurl}}/assets/img/isomap.png" style="align:left; width:32%">
+<img src="{{site.baseurl}}/assets/img/lle.png" style="align:left; width:32%">
+<h5 style="text-align:center">Figure 5 : Représentation des projections (t-SNE, Isomap, LLE) des entrées de MNIST et de leur résultat[^4]</h5>
+</div>
+
+À noter que les sorties représentées peuvent être autres que les valeurs de classification finales. Des valeurs d'activation, internes au réseau, peuvent ainsi être représentées.
+
+# Lignes et surfaces
+
+La phase d'entrainement des algorithme d'apprentissage automatique est la plus longue et consommatrice d'énergie. Ainsi, en vue d'optimiser leurs recherches, les développeurs de modèles essaient de suivre en temps réel la performance du modèle. Des visualisations simples en courbes (line charts) ou en surface se sont imposées. Ces représentations aident plus particulièrement à comprendre le fonctionnement de la rétro-propagation.
+
+<div>
+<img src="{{site.baseurl}}/assets/img/loss.png" style="display: block; margin-left: auto; margin-right: auto; width:80%">
+<h5 style="text-align:center">Figure 6 : Représentation d'évolutions caractéristiques de fonctions de perte et un exemple réel.[^5]</h5>
+</div>
+
+<div>
+<img src="{{site.baseurl}}/assets/img/optimizers.gif" style="display: block; margin-left: auto; margin-right: auto; width:60%">
+<h5 style="text-align:center">Figure 7 : Représentation en surface d'algorithmes d'optimisation[^5]</h5>
+</div>
+
+Cela peut même aller jusqu'à la représentation en 3D.
+
+<div>
+<img src="{{site.baseurl}}/assets/img/surface_loss_interaction.gif" style="display: block; margin-left: auto; margin-right: auto; width:90%">
+<h5 style="text-align:center">Figure 8 : Représentation en surface de la perte associée à des modèles différents [^6]</h5>
+</div>
+
+Ces représentations ont de nombreux avantages.
+* Elles reposent sur des données agrégées facile à générer
+* Elles générallement simple à lire
+* Elles permettent de comparer des modèles similaires se différenciant par leurs hyperparamètres ou des même des modèles très différents.
 
 # Feature visualization
 
 Saliency maps
 
-# Représentations intéractives mixtes
+# Représentations mixtes intéractives
 
-ConvNetJS https://cs.stanford.edu/people/karpathy/convnetjs/
+Pour terminer, de nombreuses représentations mixtes intéractives existent autour des réseaux de neurones. Ces dernières ont soit une visée ludique, soit une visée de tableau de bord. Les outils suivants sont particulièrement remarquables.
 
-http://scs.ryerson.ca/~aharley/vis/conv/
+<b>TensorSpace.js</b> et le projet d'Adam Harley permettent l'exploration en 3D de réseaux de neurones convolutionnels.
 
-http://experiments.mostafa.io/public/ffbpann/
+https://tensorspace.org/html/playground/lenet.html
+
+<b>ConvNetJS</b> donne un tableau de bord de l'entrainement de réseaux de neurones dans des cas classiques comme MNIST ou CIFAR-10. Ce dernier exemple agrège différentes visualisations évoquées plus haut.
+
+https://cs.stanford.edu/people/karpathy/convnetjs/
 
 
 
+
+
+
+
+
+
+
+
+## Bilan
+
+Grille bilan
 
 ShapeShop https://github.com/fredhohman/shapeshop
 
@@ -85,3 +147,6 @@ ShapeShop https://github.com/fredhohman/shapeshop
 [^1]: Fred Hohman & al, <https://arxiv.org/pdf/1801.06889.pdf>
 [^2]: www.idav.ucdavis.edu/func/return_pdf?pub_id=869
 [^3]: https://www.youtube.com/watch?v=eBbEDRsCmv4
+[^4]: http://jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf
+[^5]: http://cs231n.github.io/neural-networks-3/#vis
+[^6]: http://www.telesens.co/loss-landscape-viz/viewer.html
