@@ -60,7 +60,7 @@ L'outil <b>TensorBoard</b>, permet de représenter un réseau implémenter en Te
 <h5 style="text-align:center">Figure 3 : Démonstration des possibilités d'exploration au sein d'un node-link diagram sur l'outil TensorBoard. [^3]</h5>
 </div>
 
-# Scatter plots
+# Nuages de points
 
 Les données d'entrée d'un réseau de neurones sont très variables et sont généralement représentées par des objets à grande dimension. Ces grandes dimensions sont un réel défi pour la visualisation de données. En effet, comment comparer le traitement d'un modèle sur des entrées différentes en plaçant sur un même graphique les entrées et les résultats. Face à ce problème de dimension, un solution courante existe, <b>la projection</b>. Nous représentons dans le schéma suivant l'utilisation d'une projection pour comparer la bonne classification d'image de 32x32 = 1024 pixels.
 
@@ -108,9 +108,23 @@ Ces représentations ont de nombreux avantages.
 * Elles générallement simple à lire
 * Elles permettent de comparer des modèles similaires se différenciant par leurs hyperparamètres ou des même des modèles très différents.
 
-# Feature visualization
+# Visualiser l'apprentissage du modèle
 
-Saliency maps
+Une fois un modèle entrainé et donnant des résultats satisfaisant, il est logique de se demander ce qu'il sait. En effet, il est en mesure de classer correctement des entrées cependant des questions se posent sur les aspects des entrées qui lui sont vraiment utiles et la "compréhension" qu'il a des classes. Deux types de visualisations particulières existent pour cela dans le cas d'images en entrée.
+
+* <b>Attribution</b> : Ce type de visualisation permet, pour une image d'entrée, de générer une image d'entrée modifiée en faisant dire au modèle les zones qui lui ont permis de faire sa classification. Ces images générées sont souvent appelées "saliency maps" ou carte des saillances.
+
+<div>
+<img src="{{site.baseurl}}/assets/img/saliency_maps.png" style="display: block; margin-left: auto; margin-right: auto; width:90%">
+<h5 style="text-align:center">Figure 9 : Exemples de saliency maps[^7]</h5>
+</div>
+
+* <b>Visualisation de classe</b> : Ce type de visualisation permet de générer une image artificielle représentant une classe. Ainsi, il devient possible de voir ce que le modèle considère comme une classe donnée. Il est particulièrement intéressant de comparer sa représentation d'une classe à la notre.
+
+<div>
+<img src="{{site.baseurl}}/assets/img/class_visualization.png" style="display: block; margin-left: auto; margin-right: auto; width:90%">
+<h5 style="text-align:center">Figure 10 : Exemples de visualisations de classes[^7]</h5>
+</div>
 
 # Représentations mixtes intéractives
 
@@ -118,27 +132,23 @@ Pour terminer, de nombreuses représentations mixtes intéractives existent auto
 
 <b>TensorSpace.js</b> et le projet d'Adam Harley permettent l'exploration en 3D de réseaux de neurones convolutionnels.
 
-https://tensorspace.org/html/playground/lenet.html
+<div>
+<img src="{{site.baseurl}}/assets/img/tensorspace.gif" style="display: block; margin-left: auto; margin-right: auto; width:90%">
+<h5 style="text-align:center">Figure 11 : Exemple d'exploration de LeNet permise par TensorSpace.js[^8]</h5>
+</div>
 
 <b>ConvNetJS</b> donne un tableau de bord de l'entrainement de réseaux de neurones dans des cas classiques comme MNIST ou CIFAR-10. Ce dernier exemple agrège différentes visualisations évoquées plus haut.
 
-https://cs.stanford.edu/people/karpathy/convnetjs/
-
-
-
-
-
-
-
-
-
-
+<div>
+<img src="{{site.baseurl}}/assets/img/convnet_tableau.png" style="align:left; width:90%">
+<img src="{{site.baseurl}}/assets/img/convnet_layer.png" style="align:left; width:90%">
+<img src="{{site.baseurl}}/assets/img/convnet_prediction.png" style="align:left; width:90%">
+<h5 style="text-align:center">Figure 12 : Exemples de représentations figurants dans l'outil ConvNet [^9]</h5>
+</div>
 
 ## Bilan
 
 Grille bilan
-
-ShapeShop https://github.com/fredhohman/shapeshop
 
 <a href="{{site.baseurl}}/{% post_url 2019-01-30-limites-de-la-demarche %}">Partie 4 : Limites de la démarche</a>
 
@@ -150,3 +160,6 @@ ShapeShop https://github.com/fredhohman/shapeshop
 [^4]: http://jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf
 [^5]: http://cs231n.github.io/neural-networks-3/#vis
 [^6]: http://www.telesens.co/loss-landscape-viz/viewer.html
+[^7]: https://arxiv.org/abs/1312.6034
+[^8]: https://tensorspace.org/html/playground/lenet.html
+[^9]: https://cs.stanford.edu/people/karpathy/convnetjs/
