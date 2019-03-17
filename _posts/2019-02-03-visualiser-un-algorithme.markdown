@@ -2,24 +2,17 @@
 layout: post_site
 title: "1 - Visualiser un algorithme"
 date: 2019-02-03 12:04:32 +0100
-permalink: "/visualiser-un-algorithme"
+permalink: "visualiser-un-algorithme"
 ---
 
 # Il est difficile de visualiser une algorithme (ou de visualiser tout court)
 
-La force de la visualisation de données réside dans la communication de connaissance par l'encodage visuel afin de transformer des données abstraites en des représentations pertinentes. [^2]
+La force de la visualisation de données réside dans la communication de connaissance par l'encodage visuel afin de transformer des données abstraites en des représentations pertinentes. [^2] Une visualisation réussie s'accompagne généralement d'une grande difficulté de représentation :
 
-Pourquoi la visualisation de données est complexe
-
-(cf conférence Mike Bostock)
-(cf livre visualisation)
-
-Pourquoi les algorithmes sont des
 
 # Algorithmes en boites
-Augmenter la compréhension d'un processus logique par la vue.
 
-La classification suivante[^1] a été proposée par Mike Bostock, le créateur de D3.js, l'outil le plus avancé de visualisation de données. Elle distingue trois familles d'algorithme en fonction de leur opacité.
+La classification suivante[^1] a été proposée par Mike Bostock, le créateur de D3.js, l'outil le plus avancé de visualisation de données. Elle distingue trois familles d'algorithme en fonction de leur opacité et leur associe trois couleurs.
 
 <div>
 <img src="{{site.baseurl}}/assets/img/boites.png" style="display: block; margin-left: auto; margin-right: auto; width:80%">
@@ -30,9 +23,9 @@ Une boite noire permet d'évaluer la véracité des résultats de l'algorithme m
 
 # Exemple : calcul du PGCD par algorithme d'Euclide
 
-Nous souhaitons illustrer la partie précédente avec un exemple connu de tous. L'algorithme étudié est l'algorithme d'Euclide permettant de déterminer le plus grand commun diviseur entre deux nombre entiers positifs. Cet algorithme peut facilement être implémenté avec un language informatique. Nous choisissons de montrer ce que l'algorithme d'Euclide nous dit traité comme une boite noire, grise ou blanche.
+Nous souhaitons illustrer la partie précédente avec un exemple connu de tous. L'algorithme étudié est l'algorithme d'Euclide permettant de déterminer le plus grand commun diviseur entre deux nombres entiers positifs. Cet algorithme peut facilement être implémenté avec un langage informatique. Nous choisissons de montrer ce que l'algorithme d'Euclide nous dit, traité comme une boite noire, grise ou blanche.
 
-Les deux premiers exemples sont l'algorithme en version boite noire et grise. Dans le cas de la <b>boite noire</b>, le résultat final est bien connu, et oui, 2 est bien le PGCD de 72 et 26. Nous pouvons vérifier que l'algorithme fonctionne sur ce cas mais rien ne nous dit que l'algorithme fonctionnera sur d'autres cas car on ne peut dire ce qu'il s'y passe. Dans le cas de la <b>boite grise</b>, les valeurs successives de b sont renvoyées par le programme. Les valeurs sont rassurantes car elles permettent de voir que les étapes de l'algorithme implémenté sont bien conforme à la manière dont procèderait un humain. Cependant rien de m'assure que les résultats donnés par l'algorithme proviennent bien de divisions euclidiennes successives.
+Les deux premiers exemples sont l'algorithme en version boite noire et grise. Dans le cas de la <b>boite noire</b>, le résultat final est bien connu, 2 est bien le PGCD de 72 et 26. Nous pouvons vérifier que l'algorithme fonctionne sur ce cas mais rien ne nous dit que l'algorithme fonctionnera sur d'autres car on ne peut dire ce qu'il s'y passe. Dans le cas de la <b>boite grise</b>, les valeurs successives de b sont renvoyées par le programme. Les valeurs sont rassurantes car elles permettent de voir que les étapes de l'algorithme implémenté sont bien conformes à la manière dont procèderait un humain. Cependant rien de m'assure que les résultats donnés par l'algorithme proviennent bien de divisions euclidiennes successives.
 
 <div>
 <img src="{{site.baseurl}}/assets/img/black_box.png" style="align:left; width:49%">
@@ -64,7 +57,7 @@ Nous proposons la visualisation suivante pour l'algorithme d'Euclide, avec 72 et
 Nous espérons que cette première partie permet de montrer qu'il n'y a rien d'évident à visualiser un algorithme. Le cas traité est un cas facile comparé à d'autres algorithmes et en particulier à ceux d'apprentissage automatique. En effet, l'algorithme d'euclide implémenté est une transcription à l'identique d'une programme fait à la main. Autrement dit, nous savons résoudre le problème du PGCD sans ordinateurs. Il existe une autre classe d'algorithme moins conventionnels qui nous aide à répondre à des problèmes que nous ne savons pas résoudre, les algorithmes d'apprentissage automatique.
 
 
-<a href="{{site.baseurl}}/{% post_url 2019-02-02-pourquoi-visualiser-l-apprentissage_automatique %}">Partie 2 : Pourquoi visualiser les algorithmes de machine learning ?</a>
+<a href="{{site.baseurl}}{% post_url 2019-02-02-pourquoi-visualiser-l-apprentissage_automatique %}">Partie 2 : Pourquoi visualiser les algorithmes d'apprentissage automatique' ?</a>
 
 ## Références
 

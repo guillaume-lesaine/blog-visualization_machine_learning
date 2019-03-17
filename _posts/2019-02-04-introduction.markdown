@@ -2,7 +2,7 @@
 layout: post_site
 title: "Introduction"
 date: 2019-02-04 12:04:32 +0100
-permalink: "/introduction"
+permalink: "introduction"
 ---
 ## Pourquoi ce blog ?
 
@@ -60,23 +60,13 @@ En pratique, l'apprentissage automatique revient à chercher de manière automat
 
 # Cadre d'étude
 
-L'apprentissage automatique est un domaine immense. De plus, les effets sociétaux liés à ses applications sont encore mal connus. Nous nous devons donc donner un cadre à cette étude afin de ne pas nous éparpiller ou risquer de rester à la surface des choses. Nous voulons donc être clair sur ce qui sera traité et ce qui ne le sera pas.
+L'apprentissage automatique est un domaine immense. De plus, les effets sociétaux liés à ses applications sont encore mal connus. Nous nous devons donc donner un cadre à cette étude afin de ne pas nous éparpiller. Nous aborderons la difficulté de visualisation des algorithmes au sens général. Nous aborderons ensuite le cas de l'apprentissage automatique et des défis posés par les développements récents. Nous terminerons par étudier un cas particulier de modèle d'apprentissage automatique : le réseau de neurones convolutionnels.
 
-<h4>Sera traité</h4>
-
- * Les raisons expliquant le besoin de visualiser les algorithmes d'apprentissage automatique
- * Les difficultés
- * z
-
-<h4>Ne le sera pas</h4>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat odio eu lacus molestie, a interdum nisi lacinia. Etiam faucibus ac sem et congue. Vestibulum et imperdiet odio. Nunc lacus risus, finibus quis elementum sit amet, posuere non justo. Donec faucibus turpis eget magna aliquam pellentesque. Fusce ac rutrum nisi. Maecenas feugiat euismod elit, eu egestas felis dignissim sed. Integer felis leo, blandit at augue in, porta blandit urna.
-
-<a href="{{site.baseurl}}/{% post_url 2019-02-03-visualiser-un-algorithme %}">Partie 1 : Peut-on visualiser un algoithme ?</a>
+<a href="{{site.baseurl}}{% post_url 2019-02-03-visualiser-un-algorithme %}">Partie 1 : Visualiser un algoithme</a>
 
 ## Références
 
 [^1]: Donald A. Norman, "The Psychology of Everyday Things", 1988, ISBN 0465067093
 [^2]: Stuart K. Card, Jock D. Mackinlay and Ben Shneiderman, [Readings in Information Visualization: Using Vision to Think](https://books.google.fr/books?id=wdh2gqWfQmgC&printsec=frontcover&hl=fr#v=onepage&q&f=false]), 1999, ISBN 1558605339
 [^3]: Dictionnaire Larousse, [algorithme](https://www.larousse.fr/dictionnaires/francais/algorithme/2238)
-[^4]: Tom Mitchell, (http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf), , 
+[^4]: Tom Mitchell, (http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf), ,

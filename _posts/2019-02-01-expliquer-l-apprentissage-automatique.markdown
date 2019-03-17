@@ -2,27 +2,23 @@
 layout: post_site
 title: "3 - Expliquer l'apprentissage automatique"
 date: 2019-02-01 12:04:32 +0100
-permalink: "/expliquer-l-apprentissage-automatique"
+permalink: "expliquer-l-apprentissage-automatique"
 ---
 
-Nous nous plaçons donc dans le cadre d'algorithmes dont l'opacité est uniquement liée à sa manière d'opérer. Plusieurs questions vont donc se poser. En effet, expliquer le fonctionnement de l'algorithme va dépendre du public de destination et de la visée. Nous allons donc explorer les objets, modes et moment de visualisation d'un algorithme d'apprentissage automatique. Nous choisissons de focaliser l'étude sur les réseaux de neurones convolutionnels.
-
-
-
+Dans la partie précédente, nous avons évoqué différents types d'opacité. Les deux premières étaient liées au secret des entreprises et aux limites de connaissance informatique de la population. Nous laisserons ces deux cas de coté. Nous nous plaçons dans le cadre du dernier type d'opacité, le cadre d'un algorithme dont l'opacité serait uniquement liée à sa manière d'opérer. Plusieurs questions vont donc se poser. En effet, expliquer le fonctionnement de l'algorithme va dépendre du public de destination et de la visée. Nous allons donc explorer les objets, modes et moment de visualisation d'un algorithme d'apprentissage automatique. Nous choisissons de focaliser l'étude sur les réseaux de neurones convolutionnels.
 
 ## Que représenter ?
 
-Nous pouvons distinguer quatre grands aspects visualisable d'un réseau de neurones[^1] :
+Comme vu dans les pages précédentes, une visualisation commence toujours par l'acquisition de données. Nous pouvons ainsi distinguer quatre grands aspects visualisable d'un réseau de neurones[^1] en fonction des données qu'il génère :
 
 <div>
 <img src="{{site.baseurl}}/assets/img/cnn.png" style="display: block; margin-left: auto; margin-right: auto; width:90%">
 <h5 style="text-align:center">Figure 1 : Schéma d'un réseau de neurones convolutionnels avec figuration des aspects visualisables</h5>
 </div>
 
-* <b>Architecture du modèle</b> : L'architecture du modèle peut tout d'abord être représentée. Celle-ci permet de représenter comment les données se propagent dans le modèle. Cette représentation peut inclure la représentation des liens au matériel ainsi qu'aux sauvegardes et logs effectuées.
+* <b>Architecture du modèle</b> : L'architecture du modèle peut tout d'abord être représentée. Celle-ci permet de représenter comment les données se propagent dans le modèle. Cette représentation peut inclure la représentation des liens au matériel ainsi qu'aux sauvegardes et logs effectués.
 
 * <b>Paramètres appris</b> : Les paramètres appris lors de l'entrainement peuvent être représentés. Les poids des neurones peuvent être comparés de même que l'évolution des filtres de convolution.
-Poids et filtres de convolution
 
 * <b>Étapes du processus</b> : Au cours des passes avant et retour d'un réseau de neurones, certains évènements peuvent être visualisés. La valeur d'activation de chaque noeud du réseau peut permettre d'évaluer le "niveau d'utilisation" d'un neurone. Le processus de rétro-propagation peut être visualisé à chaque couche du réseau pour montrer comment l'erreur est distribuée sur les paramètres du réseau.
 
@@ -40,24 +36,24 @@ Dans le cadre d'un algorithme d'apprentissage automatique, se pose la question d
 
 # Node-link diagrams
 
-Une première idée de représentation des réseaux de neurones est la visualisation par noeuds et liens. Cela permet de montrer comment sont reliés les neurones et la manière dont ils s'influence. Les visualisations les plus simples sont statiques et utilisent la couleur et l'épaisseur des liens pour encoder des valeur d'activation et l'influence de certains neurones.
+Une première idée de représentation des réseaux de neurones est la visualisation par noeuds et liens. Cela permet de montrer comment sont reliés les neurones et la manière dont ils s'influencent. Les visualisations les plus simples sont statiques et utilisent la couleur et l'épaisseur des liens pour encoder des valeur d'activation et l'influence de certains neurones.
 
 Dans la représentation ci-dessous, un réseau de neurones simple, avec une couche cachée est visualisée. Il est destiné à repérer l'appartenance d'un pixel au cerveau sur une IRM.
 
 <div>
 <img src="{{site.baseurl}}/assets/img/nn_irm.png" style="display: block; margin-left: auto; margin-right: auto; width:70%">
-<h5 style="text-align:center">Figure 2 : Visualisation des valeurs des neurones d'entrée et de sortie pour une classification du cerveau sur une IRM. p correspond aux position (x,y,z), n à des informations sur les pixels environnants, g et s sont des paramètres d'IRM. [^2]</h5>
+<h5 style="text-align:center">Figure 2 : Visualisation des valeurs des neurones d'entrée et de sortie pour une classification du cerveau sur une IRM. p correspond aux position (x,y,z), n à des informations sur les pixels environnants, g et s sont des paramètres d'IRM.[^2]</h5>
 </div>
 
 Il est remarquable que les entrées n'aient pas la même influence sur le résultat final en fonction de la position du pixel analysé. En effet, le système n'utilise que les informations de position pour prédire le résultat d'un pixel situé au niveau de la machoire. Au contraire, un pixel dans le cerveau utilisera presque toutes les informations disponibles pour valider le résultat.
 
 <b>Cependant, la visualisation, par sa staticité, devient difficile à exploiter pour un réseau de neurones plus complexe.</b> D'autres visualisation s'intéressent au contraire à rendre explorable le réseau afin de laisser l'utilisateur adapter la densité visuelle d'information présentée.
 
-L'outil <b>TensorBoard</b>, permet de représenter un réseau implémenter en TensorFlow. La représentation est toujours faite de noeuds et de liens, mais elle permet d'explorer le réseau et d'agrandir le niveau de détails sur certains noeuds.
+L'outil <b>TensorBoard</b>, permet de représenter un réseau implémenté en TensorFlow. La représentation est toujours faite de noeuds et de liens, mais elle permet d'explorer le réseau et d'agrandir le niveau de détails sur certains noeuds.
 
 <div>
 <img src="{{site.baseurl}}/assets/img/tensorboard.gif" style="display: block; margin-left: auto; margin-right: auto; width:90%">
-<h5 style="text-align:center">Figure 3 : Démonstration des possibilités d'exploration au sein d'un node-link diagram sur l'outil TensorBoard. [^3]</h5>
+<h5 style="text-align:center">Figure 3 : Démonstration des possibilités d'exploration au sein d'un node-link diagram sur l'outil TensorBoard.[^3]</h5>
 </div>
 
 # Nuages de points
@@ -69,7 +65,7 @@ Les données d'entrée d'un réseau de neurones sont très variables et sont gé
 <h5 style="text-align:center">Figure 4 : Schématisation d'une réduction de dimension</h5>
 </div>
 
-Chaque image est représentée par un vecteur de 1024 pixels. Il serait possible d'effectuer 1024 représentation des pixels entre les images d'entrée. Cela ne permettrait pas de donner une idée de la qualité du modèle. Une projection des 1024 dimensions en 2D ou 3D est donc effectuée permettant de placer chaque image d'entrée dans un nuage de point (scatter plot). À noter que les axes après projection n'ont pas toujours une signification particulière. Les sorties correspondant à des classes sont elles encodée simplement par des couleurs.
+Chaque image est représentée par un vecteur de 1024 pixels. Il serait possible d'effectuer 1024 représentation des pixels entre les images d'entrée. Cela ne permettrait pas de donner une idée de la qualité du modèle. Une projection des 1024 dimensions en 2D ou 3D est donc effectuée permettant de placer chaque image d'entrée dans un nuage de point (scatter plot). À noter que les axes après projection n'ont pas toujours une signification particulière. Les sorties correspondant à des classes sont elles encodées simplement par des couleurs.
 
 Le choix de projection est à la discretion de l'équipe développant le modèle. Néanmoins, certaines projections seront mieux adaptées en fonction de des distributions des données d'entrée.[^4] Ci-dessous quelques exemples de représentations après projection pour la prédiction de nombres écrits à la main provenant de la base MNIST.
 
@@ -105,12 +101,12 @@ Cela peut même aller jusqu'à la représentation en 3D.
 
 Ces représentations ont de nombreux avantages.
 * Elles reposent sur des données agrégées facile à générer
-* Elles générallement simple à lire
+* Elles sont générallement simples à lire
 * Elles permettent de comparer des modèles similaires se différenciant par leurs hyperparamètres ou des même des modèles très différents.
 
 # Visualiser l'apprentissage du modèle
 
-Une fois un modèle entrainé et donnant des résultats satisfaisant, il est logique de se demander ce qu'il sait. En effet, il est en mesure de classer correctement des entrées cependant des questions se posent sur les aspects des entrées qui lui sont vraiment utiles et la "compréhension" qu'il a des classes. Deux types de visualisations particulières existent pour cela dans le cas d'images en entrée.
+Une fois un modèle entrainé et donnant des résultats satisfaisants, il est logique de se demander ce qu'il sait. En effet, il est en mesure de classer correctement des entrées cependant des questions se posent sur les aspects des entrées qui lui sont vraiment utiles et la "compréhension" qu'il a des classes. Deux types de visualisations particulières existent pour cela dans le cas d'images en entrée.
 
 * <b>Attribution</b> : Ce type de visualisation permet, pour une image d'entrée, de générer une image d'entrée modifiée en faisant dire au modèle les zones qui lui ont permis de faire sa classification. Ces images générées sont souvent appelées "saliency maps" ou carte des saillances.
 
@@ -119,7 +115,7 @@ Une fois un modèle entrainé et donnant des résultats satisfaisant, il est log
 <h5 style="text-align:center">Figure 9 : Exemples de saliency maps[^7]</h5>
 </div>
 
-* <b>Visualisation de classe</b> : Ce type de visualisation permet de générer une image artificielle représentant une classe. Ainsi, il devient possible de voir ce que le modèle considère comme une classe donnée. Il est particulièrement intéressant de comparer sa représentation d'une classe à la notre.
+* <b>Visualisation de classe</b> : Ce type de visualisation permet de générer une image artificielle représentant une classe. Ainsi, il devient possible de voir ce que le modèle considère comme une classe donnée. Il est particulièrement intéressant de comparer sa représentation d'une classe à une autre.
 
 <div>
 <img src="{{site.baseurl}}/assets/img/class_visualization.png" style="display: block; margin-left: auto; margin-right: auto; width:90%">
@@ -148,9 +144,14 @@ Pour terminer, de nombreuses représentations mixtes intéractives existent auto
 
 ## Bilan
 
-Grille bilan
+Voici sous forme d'un tableau le résumé des représentations évoquées plus haut :
 
-<a href="{{site.baseurl}}/{% post_url 2019-01-30-conclusion %}">Conclusion</a>
+<div>
+<img src="{{site.baseurl}}/assets/img/tableau_bilan.png" style="display: block; margin-left: auto; margin-right: auto; width:90%">
+<h5 style="text-align:center">Figure 11 : Tableau bilan des solutions évoquées</h5>
+</div>
+
+<a href="{{site.baseurl}}{% post_url 2019-01-30-conclusion %}">Conclusion</a>
 
 ## Références
 
