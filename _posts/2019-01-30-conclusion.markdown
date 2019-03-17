@@ -6,3 +6,7 @@ permalink: "/conclusion"
 ---
 
 On peut faire parler les modèles d'apprentissage automatique.
+
+# Limites de la démarche
+
+# Perspectives

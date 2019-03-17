@@ -84,10 +84,10 @@ Nous pouvons par ailleurs distinguer <b>quatre raisons</b> de visualiser l'appre
 
 ## Références
 
-[^1]: Google Research, <https://ai.google/research/people/author205>
-[^2]: Peter Norvig, USI 2015, (3:10 - 4:10) <https://www.youtube.com/watch?v=BJ2QVzGmb2w>
-[^3]: Jenna Burrell, <https://journals.sagepub.com/doi/10.1177/2053951715622512>
-[^4]: Fred Hohman & al, <https://arxiv.org/pdf/1801.06889.pdf>
-[^5]: RGPD  [Section 2, Article 13 - 14, 2)f) - 2)g)], https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679
-[^6]: science_of_interpretability, https://arxiv.org/pdf/1702.08608.pdf
-[^7]: Hendrik Strobelt & al,<https://arxiv.org/pdf/1606.07461.pdf>
+[^1]: Google Research [Site internet](https://ai.google/research/people/author205)
+[^2]: Peter Norvig, [Conférence USI 2015](https://www.youtube.com/watch?v=BJ2QVzGmb2w), (3:10 - 4:10)
+[^3]: Jenna Burrell, [How the machine ‘thinks’: Understandingopacity in machine learning algorithms](https://journals.sagepub.com/doi/10.1177/2053951715622512), 2016
+[^4]: Fred Hohman, Minsuk Kahng, Robert Pienta, Duen Horng Chau, [Visual Analytics in Deep Learning:An Interrogative Survey for the Next Frontiers](https://arxiv.org/pdf/1801.06889.pdf), 2018
+[^5]: [RGPD](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679), Section 2, Article 13 - 14, 2)f) - 2)g)
+[^6]: Finale Doshi-Velez, Been Kim, [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/pdf/1702.08608.pdf), 2017
+[^7]: Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush, [LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics inRecurrent Neural Networks](https://arxiv.org/pdf/1606.07461.pdf), 2017

@@ -150,16 +150,16 @@ Pour terminer, de nombreuses représentations mixtes intéractives existent auto
 
 Grille bilan
 
-<a href="{{site.baseurl}}/{% post_url 2019-01-30-limites-de-la-demarche %}">Partie 4 : Limites de la démarche</a>
+<a href="{{site.baseurl}}/{% post_url 2019-01-30-conclusion %}">Conclusion</a>
 
 ## Références
 
-[^1]: Fred Hohman & al, <https://arxiv.org/pdf/1801.06889.pdf>
-[^2]: www.idav.ucdavis.edu/func/return_pdf?pub_id=869
-[^3]: https://www.youtube.com/watch?v=eBbEDRsCmv4
-[^4]: http://jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf
-[^5]: http://cs231n.github.io/neural-networks-3/#vis
-[^6]: http://www.telesens.co/loss-landscape-viz/viewer.html
-[^7]: https://arxiv.org/abs/1312.6034
-[^8]: https://tensorspace.org/html/playground/lenet.html
-[^9]: https://cs.stanford.edu/people/karpathy/convnetjs/
+[^1]: Fred Hohman, Minsuk Kahng, Robert Pienta, Duen Horng Chau, [Visual Analytics in Deep Learning:An Interrogative Survey for the Next Frontiers](https://arxiv.org/pdf/1801.06889.pdf), 2018
+[^2]: Fan-Yin Tzeng, Kwan-Liu Ma, [Opening the Black Box — Data Driven Visualization of Neural Networks](https://ieeexplore.ieee.org/document/1532820)
+[^3]: Vidéo, [Hands-on TensorBoard](https://www.youtube.com/watch?v=eBbEDRsCmv4)
+[^4]: Laurens van der Maaten, Geoffrey Hinton [VisualizingDatausingt-SNE](http://jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf), 2008
+[^5]: Cours Stanford CS, [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/neural-networks-3/#vis)
+[^6]: [Loss Visualization](http://www.telesens.co/loss-landscape-viz/viewer.html)
+[^7]: Karen Simonyan, Andrea Vedaldi, Andrew Zisserman, [Deep Inside Convolutional Networks: VisualisingImage Classification Models and Saliency Maps](https://arxiv.org/abs/1312.6034), 2014
+[^8]: TensorSpace.js, [LeNet](https://tensorspace.org/html/playground/lenet.html)
+[^9]: Andrej Karpathy, [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/)

@@ -68,5 +68,5 @@ Nous espérons que cette première partie permet de montrer qu'il n'y a rien d'�
 
 ## Références
 
-[^1]: Mike Bostock, <https://bost.ocks.org/mike/algorithms/>
-[^2]: Fred Hohman & al, <https://arxiv.org/pdf/1801.06889.pdf>
+[^1]: Mike Bostock, [Visualizing Algorithms](https://bost.ocks.org/mike/algorithms/), 2014
+[^2]: Fred Hohman, Minsuk Kahng, Robert Pienta, Duen Horng Chau, [Visual Analytics in Deep Learning:An Interrogative Survey for the Next Frontiers](https://arxiv.org/pdf/1801.06889.pdf), 2018

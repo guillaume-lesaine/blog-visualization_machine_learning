@@ -76,7 +76,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat odio eu 
 
 ## Références
 
-[^1]: Donald Norman Artefacts cognitifs Norman
-[^2]: <https://books.google.fr/books?id=wdh2gqWfQmgC&printsec=frontcover&hl=fr#v=onepage&q&f=false]>
-[^3]: <https://www.larousse.fr/dictionnaires/francais/algorithme/2238]>
-[^4]: <http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf]>
+[^1]: Donald A. Norman, "The Psychology of Everyday Things", 1988, ISBN 0465067093
+[^2]: Stuart K. Card, Jock D. Mackinlay and Ben Shneiderman, [Readings in Information Visualization: Using Vision to Think](https://books.google.fr/books?id=wdh2gqWfQmgC&printsec=frontcover&hl=fr#v=onepage&q&f=false]), 1999, ISBN 1558605339
+[^3]: Dictionnaire Larousse, [algorithme](https://www.larousse.fr/dictionnaires/francais/algorithme/2238)
+[^4]: Tom Mitchell, (http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf), , 
