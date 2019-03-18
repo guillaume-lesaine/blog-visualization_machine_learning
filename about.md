@@ -8,4 +8,4 @@ Ce blog vise à discuter l'apport de la la visualisation à la compréhension de
 
 Remerciements
 
-Le blog a été réalisé en [Jekyll](https://jekyllrb.com/). L'ensemble des codes sont disponibles sur [GitHub](https://github.com/guillaume-lesaine/blog-visualization_machine_learning).
+Le blog a été réalisé en [Jekyll](https://jekyllrb.com/). L'ensemble du code est disponibles sur [GitHub](https://github.com/guillaume-lesaine/blog-visualization_machine_learning).

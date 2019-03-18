@@ -5,10 +5,9 @@ date: 2019-02-03 12:04:32 +0100
 permalink: "visualiser-un-algorithme"
 ---
 
-# Il est difficile de visualiser une algorithme (ou de visualiser tout court)
+# Il est difficile de visualiser
 
-La force de la visualisation de données réside dans la communication de connaissance par l'encodage visuel afin de transformer des données abstraites en des représentations pertinentes. [^2] Une visualisation réussie s'accompagne généralement d'une grande difficulté de représentation :
-
+La force de la visualisation de données réside dans la communication de connaissance par l'encodage visuel afin de transformer des données abstraites en des représentations pertinentes. [^2] Une visualisation réussie s'accompagne généralement d'une grande difficulté de représentation. En effet toute visualisation nécessite de "composer avec une multitude de processus cognitifs et perceptifs" afin de s'adapter aux capacités du public et retenir sont attention[^3]. Par ailleurs de réels difficultés techniques existent. Cela va de l'acquisition de données exploitables à la conception même des représentations avec outils informatisés.
 
 # Algorithmes en boites
 
@@ -63,3 +62,4 @@ Nous espérons que cette première partie permet de montrer qu'il n'y a rien d'�
 
 [^1]: Mike Bostock, [Visualizing Algorithms](https://bost.ocks.org/mike/algorithms/), 2014
 [^2]: Fred Hohman, Minsuk Kahng, Robert Pienta, Duen Horng Chau, [Visual Analytics in Deep Learning:An Interrogative Survey for the Next Frontiers](https://arxiv.org/pdf/1801.06889.pdf), 2018
+[^3]: Isabel Meirelles, Design de l'information (traduction), 2013, ISBN 9791026100317 
