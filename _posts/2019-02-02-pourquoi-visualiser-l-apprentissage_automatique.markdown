@@ -14,14 +14,14 @@ Ainsi, le développeur conçoit le cadre d'apprentissage et de fonctionnement po
 
 ## Problème : des enjeux vitaux et omniprésents
 
-Facebook est apparu en 2004, Youtube en 2005 et Twitter en 2006. Depuis 15 ans, des plateformes numériques diverses ont rencontré d'importants succès sociétaux et commerciaux. Elles sont les premières applications d'ampleur qui ont confronté le grand public à des algorithmes de classification et plus globalement d'apprentissage automatique. La figure suivante présente un pannel de plateformes numériques et leurs effets potentiels sur la conception de la démocratie, des goûts, de des relations sociales, d'une  vie professionnelle ou privée.
+Facebook est apparu en 2004, Youtube en 2005 et Twitter en 2006. Depuis 15 ans, des plateformes numériques diverses ont rencontré d'importants succès sociétaux et commerciaux. Elles sont les premières applications d'ampleur qui ont confronté le grand public à des algorithmes de classification et plus globalement d'apprentissage automatique. La figure suivante présente un pannel de plateformes numériques et leurs effets potentiels sur la conception de la démocratie, des goûts, des relations sociales, d'une  vie professionnelle ou privée.
 
 <div>
-<img src="{{site.baseurl}}/assets/img/data_life.png" style="display: block; margin-left: auto; margin-right: auto; width:100%">
+<img src="{{site.baseurl}}/assets/img/platforms.png" style="display: block; margin-left: auto; margin-right: auto; width:100%">
 <h5 style="text-align:center">Figure 1 : Des outils numériques et leur influence.</h5>
 </div>
 
-Cette représentation ne dit bien sûr pas tout ce que les livres, école ou expérience enseignent. Néanmoins de nombreuses questions se posent quant à la manière dont des algorithmes d'apprentissage automatique accompagne le développement des personnes. Les critères suivants[^6] constituent ceux qui peuvent nous préoccuper sur les dix dernières années d'utilisation de plateformes.
+L'omniprésence de ces plateformes peut par exemple nous interroger sur la manière dont des algorithmes d'apprentissage automatique accompagne le développement des personnes. Les critères suivants[^6] constituent ceux qui peuvent nous préoccuper sur les dix dernières années d'utilisation de plateformes.
 
 * <b>Équité et impartialité</b> - Les algorithmes m'ayant orienté m'ont-ils enfermé dans une bulle ou possédaient-ils des biais ?
 * <b>Vie privée</b> - Les entreprises ont elles mis en place des limites d'utilisation satisfaisantes de mes données ?  
@@ -56,7 +56,7 @@ Il faudrait ainsi rendre interprétables les modèles. On peut définir ainsi l'
   <i>"Ability to explain or to present in understanding terms to a human."</i>[^6]
 </p>
 
-À noter par ailleurs avant d'aller plus loin qu'il existe des cas dans lesquels l'opacité n'est pas un problème. En effet, il est possible que nous n'ayons pas besoin d'expliquer le contenu et fonctionnement d'une boite noire. Un premier exemple consiste en des algorithmes dont les conséquences seraient faibles : les résultats innacceptables n'entraineraient alors pas de problèmes majeurs. Un autre cas pour lequel l'opacité n'est pas un problème est le cas d'une application où le système pourrait être testé en amon sur des millions de données. En traitant le système comme une boite noire, nous serions alors en mesure de prédire par l'expérience son fonctionnement.
+À noter par ailleurs avant d'aller plus loin qu'il existe des cas dans lesquels l'opacité n'est pas un problème. En effet, il est possible que nous n'ayons pas besoin d'expliquer le contenu et fonctionnement d'une boite noire. Un premier exemple consiste en des algorithmes dont les conséquences seraient faibles : les résultats innacceptables n'entraineraient alors pas de problèmes majeurs. Un autre cas pour lequel l'opacité n'est pas un problème est le cas d'une application où le système n'évolue pas et pourrait être testé en amont sur des millions de données. En traitant le système comme une boite noire, nous serions alors en mesure de prédire par l'expérience son fonctionnement.
 
 ## Trois publics et quatre raisons pour lesquels visualiser
 
@@ -80,7 +80,7 @@ Nous pouvons par ailleurs distinguer <b>quatre raisons</b> de visualiser l'appre
 
 De part les enjeux sociétaux liés à leur utilisation ainsi que par leur opacité les algorithmes d'apprentissage automatique sont donc dignes d'étude. Par ailleurs, la variété des bénéficiaires et d'applications ajoute à l'intérêt de la tâche.
 
-<a href="{{site.baseurl}}{% post_url 2019-02-01-expliquer-l-apprentissage-automatique %}">Partie 3 : Rendre compte du fonctionnement des algorithmes d'apprentissage automatique'</a>
+<a href="{{site.baseurl}}{% post_url 2019-02-01-expliquer-l-apprentissage-automatique %}">Partie 3 : Expliquer l'apprentissage automatique</a>
 
 ## Références
 

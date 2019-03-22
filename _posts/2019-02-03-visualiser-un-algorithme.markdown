@@ -7,18 +7,18 @@ permalink: "visualiser-un-algorithme"
 
 # Il est difficile de visualiser
 
-La force de la visualisation de données réside dans la communication de connaissance par l'encodage visuel afin de transformer des données abstraites en des représentations pertinentes. [^2] Une visualisation réussie s'accompagne généralement d'une grande difficulté de représentation. En effet toute visualisation nécessite de "composer avec une multitude de processus cognitifs et perceptifs" afin de s'adapter aux capacités du public et retenir sont attention[^3]. Par ailleurs de réels difficultés techniques existent. Cela va de l'acquisition de données exploitables à la conception même des représentations avec outils informatisés.
+La force de la visualisation de données réside dans la communication de connaissance par encodage visuel afin de transformer des données abstraites en des représentations pertinentes. [^2] Une visualisation réussie s'accompagne généralement d'un difficile travail de représentation. En effet toute visualisation nécessite de "composer avec une multitude de processus cognitifs et perceptifs" afin de s'adapter aux capacités du public et retenir sont attention[^3]. Par ailleurs de réels difficultés techniques existent. Cela va de l'acquisition de données exploitables à la conception même des représentations avec outils informatisés.
 
 # Algorithmes en boites
 
-La classification suivante[^1] a été proposée par Mike Bostock, le créateur de D3.js, l'outil le plus avancé de visualisation de données. Elle distingue trois familles d'algorithme en fonction de leur opacité et leur associe trois couleurs.
+La classification suivante[^1] a été proposée par Mike Bostock, le créateur de D3.js, l'un des outils le plus avancé de visualisation de données. Elle distingue trois familles d'algorithmes en fonction de leur opacité et leur associe trois couleurs.
 
 <div>
 <img src="{{site.baseurl}}/assets/img/boites.png" style="display: block; margin-left: auto; margin-right: auto; width:80%">
 <h5 style="text-align:center">Figure 1 : Algorithmes classés en boites et ce que leur visualisation permet.</h5>
 </div>
 
-Une boite noire permet d'évaluer la véracité des résultats de l'algorithme mais sont fonctionnement est totalement opaque. Une boite grise donne une idée du comportement de l'algorithme mais peut induire en erreur ou apporter plus de questions que de réponses. La boite blanche enfin, a l'avantage de potentiellement expliquer le fonctionnement de l'algorithme. Cependant, la boite blanche s'accompagne d'une complexité plus grande de l'information, liée à au nombre et aux relations entre les données.[^1] Il est aisé de se représenter les trois situations précédentes avec un exemple simple d'algorithme : le calcul du PGCD par l'algorithme d'Euclide.
+Une boite noire permet d'évaluer la véracité des résultats de l'algorithme mais sont fonctionnement est totalement opaque. Une boite grise donne une idée du comportement de l'algorithme mais peut induire en erreur ou apporter plus de questions que de réponses. La boite blanche enfin, a l'avantage de potentiellement expliquer le fonctionnement de l'algorithme. Cependant, la boite blanche s'accompagne d'une complexité plus grande d'information, liée au nombre et aux relations entre les données.[^1] Il est aisé de se représenter les trois situations précédentes avec un exemple simple d'algorithme : le calcul du PGCD par l'algorithme d'Euclide.
 
 # Exemple : calcul du PGCD par algorithme d'Euclide
 
@@ -53,13 +53,13 @@ Nous proposons la visualisation suivante pour l'algorithme d'Euclide, avec 72 et
 <h5 style="text-align:center">Figure 4 : Proposition de visualisation pour l'algorithme d'Euclide.</h5>
 </div>
 
-Nous espérons que cette première partie permet de montrer qu'il n'y a rien d'évident à visualiser un algorithme. Le cas traité est un cas facile comparé à d'autres algorithmes et en particulier à ceux d'apprentissage automatique. En effet, l'algorithme d'euclide implémenté est une transcription à l'identique d'une programme fait à la main. Autrement dit, nous savons résoudre le problème du PGCD sans ordinateurs. Il existe une autre classe d'algorithme moins conventionnels qui nous aide à répondre à des problèmes que nous ne savons pas résoudre, les algorithmes d'apprentissage automatique.
+Nous espérons que cette première partie permet de montrer qu'il n'y a rien d'évident à visualiser un algorithme. Le cas traité est un cas facile comparé à d'autres algorithmes et en particulier à ceux d'apprentissage automatique. En effet, l'algorithme d'euclide implémenté est une transcription à l'identique d'une programme fait à la main. Autrement dit, nous savons résoudre le problème du PGCD sans ordinateurs. Il existe une autre classe d'algorithmes moins conventionnels qui nous aident à répondre à des problèmes que nous ne savons pas résoudre, les algorithmes d'apprentissage automatique.
 
 
-<a href="{{site.baseurl}}{% post_url 2019-02-02-pourquoi-visualiser-l-apprentissage_automatique %}">Partie 2 : Pourquoi visualiser les algorithmes d'apprentissage automatique' ?</a>
+<a href="{{site.baseurl}}{% post_url 2019-02-02-pourquoi-visualiser-l-apprentissage_automatique %}">Partie 2 : Pourquoi visualiser les algorithmes d'apprentissage automatique ?</a>
 
 ## Références
 
 [^1]: Mike Bostock, [Visualizing Algorithms](https://bost.ocks.org/mike/algorithms/), 2014
 [^2]: Fred Hohman, Minsuk Kahng, Robert Pienta, Duen Horng Chau, [Visual Analytics in Deep Learning:An Interrogative Survey for the Next Frontiers](https://arxiv.org/pdf/1801.06889.pdf), 2018
-[^3]: Isabel Meirelles, Design de l'information (traduction), 2013, ISBN 9791026100317 
+[^3]: Isabel Meirelles, Design de l'information (traduction), 2013, ISBN 9791026100317

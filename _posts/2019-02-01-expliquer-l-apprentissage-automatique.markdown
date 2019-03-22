@@ -9,7 +9,7 @@ Dans la partie précédente, nous avons évoqué différents types d'opacité. L
 
 ## Que représenter ?
 
-Comme vu dans les pages précédentes, une visualisation commence toujours par l'acquisition de données. Nous pouvons ainsi distinguer quatre grands aspects visualisable d'un réseau de neurones[^1] en fonction des données qu'il génère :
+Comme vu dans les pages précédentes, une visualisation commence toujours par l'acquisition de données. Nous pouvons ainsi distinguer quatre grands aspects visualisable d'un réseau de neurones[^1] en fonction des données qu'ils génèrent :
 
 <div>
 <img src="{{site.baseurl}}/assets/img/cnn.png" style="display: block; margin-left: auto; margin-right: auto; width:90%">
@@ -65,7 +65,7 @@ Les données d'entrée d'un réseau de neurones sont très variables et sont gé
 <h5 style="text-align:center">Figure 4 : Schématisation d'une réduction de dimension</h5>
 </div>
 
-Chaque image est représentée par un vecteur de 1024 pixels. Il serait possible d'effectuer 1024 représentation des pixels entre les images d'entrée. Cela ne permettrait pas de donner une idée de la qualité du modèle. Une projection des 1024 dimensions en 2D ou 3D est donc effectuée permettant de placer chaque image d'entrée dans un nuage de point (scatter plot). À noter que les axes après projection n'ont pas toujours une signification particulière. Les sorties correspondant à des classes sont elles encodées simplement par des couleurs.
+Chaque image est représentée par un vecteur de 1024 pixels. Il serait possible d'effectuer 1024 représentations des pixels entre les images d'entrée. Néanmoins, cela ne permettrait pas de donner une idée de la qualité du modèle. Une projection des 1024 dimensions en 2D ou 3D est donc effectuée permettant de placer chaque image d'entrée dans un nuage de point (scatter plot). À noter que les axes après projection n'ont pas toujours une signification particulière. Les sorties correspondant à des classes sont elles encodées simplement par des couleurs.
 
 Le choix de projection est à la discretion de l'équipe développant le modèle. Néanmoins, certaines projections seront mieux adaptées en fonction de des distributions des données d'entrée.[^4] Ci-dessous quelques exemples de représentations après projection pour la prédiction de nombres écrits à la main provenant de la base MNIST.
 
@@ -80,7 +80,7 @@ Le choix de projection est à la discretion de l'équipe développant le modèle
 
 # Lignes et surfaces
 
-La phase d'entrainement des algorithme d'apprentissage automatique est la plus longue et consommatrice d'énergie. Ainsi, en vue d'optimiser leurs recherches, les développeurs de modèles essaient de suivre en temps réel la performance du modèle. Des visualisations simples en courbes (line charts) ou en surface se sont imposées. Ces représentations aident plus particulièrement à comprendre le fonctionnement de la rétro-propagation.
+La phase d'entrainement des algorithmes d'apprentissage automatique est la plus longue et consommatrice d'énergie. Ainsi, en vue d'optimiser leurs recherches, les développeurs de modèles essaient de suivre en temps réel la performance du modèle. Des visualisations simples en courbes (line charts) ou en surface se sont imposées. Ces représentations aident plus particulièrement à comprendre le fonctionnement de la rétro-propagation.
 
 <div>
 <img src="{{site.baseurl}}/assets/img/loss.png" style="display: block; margin-left: auto; margin-right: auto; width:80%">
@@ -102,7 +102,7 @@ Cela peut même aller jusqu'à la représentation en 3D.
 Ces représentations ont de nombreux avantages.
 * Elles reposent sur des données agrégées facile à générer
 * Elles sont générallement simples à lire
-* Elles permettent de comparer des modèles similaires se différenciant par leurs hyperparamètres ou des même des modèles très différents.
+* Elles permettent de comparer des modèles similaires se différenciant par leurs hyperparamètres ou même des modèles très différents.
 
 # Visualiser l'apprentissage du modèle
 
